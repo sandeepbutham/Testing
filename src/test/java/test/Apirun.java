@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.*;
 public class Apirun {
 
 	public static String title;
-	
+	//added comment..from github
 	public static void get() 
 	{
 		RestAssured.baseURI="https://jsonplaceholder.typicode.com";
