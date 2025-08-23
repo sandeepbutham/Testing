@@ -52,19 +52,7 @@ int id=		res.jsonPath().getInt("id");
 String name=		res.jsonPath().get("name");
 		
 		
-	}
-	public static void put() 
-	{
-		
-	}
-	public static void  patach() 
-	{
-		
-	}
-	public static void  delete() 
-	{
-		
-	}
+	
 	
 	public static void main(String[] args) {
 		get();
