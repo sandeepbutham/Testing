@@ -52,7 +52,7 @@ int id=		res.jsonPath().getInt("id");
 String name=		res.jsonPath().get("name");
 		
 		
-	
+	}//added bracet
 	
 	public static void main(String[] args) {
 		get();
