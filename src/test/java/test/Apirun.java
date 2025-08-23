@@ -41,7 +41,7 @@ public class Apirun {
 	{
 		Response res=given()
 		.header("Content-type","Application/json")
-		.header("Authorization","Bearer" + token)
+		.header("Authorization","Bearer" + "")
 		.body("\\\"name\\\":\\\"Sandeep\\\", \\\"role\\\":\\\"QA\\\" }")
 		.when()
 		.post("/createusers")
