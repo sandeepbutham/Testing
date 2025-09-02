@@ -1,21 +1,25 @@
 package test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class Run {
-
-	public static void main(String[] args) {
-		WebDriverManager.chromedriver().setup();
-
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://github.com/sandeepbutham/Testing");
-		System.out.println(driver.getTitle());
-		driver.quit();
-
+	@DataProvider (name="data")
+   public Object[][] getdata()
+   {
+	   return  new Object[][]
+			   {
+		   {"data","data1"},
+		   {"data2","data2"},
+		   
+		   };
+   }
+	@Test (dataProvider="data")
+	public static void read(String s1, String s2) 
+	{
+		System.out.println(s1+s2);
 	}
+	
+	
 
 }
